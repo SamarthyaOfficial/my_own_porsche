@@ -1,0 +1,188 @@
+.museum-page {
+  min-height: 100vh;
+}
+
+.museum-hero {
+  position: relative;
+  height: 70vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.museum-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.museum-hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.museum-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.7));
+}
+
+.museum-hero-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  color: white;
+  padding: 0 var(--spacing-lg);
+}
+
+.museum-hero-content h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  margin-bottom: 1rem;
+}
+
+.museum-hero-content p {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+.museum-intro {
+  padding: var(--spacing-xxl) 0;
+  background-color: var(--bg-primary);
+}
+
+.museum-intro .intro-content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.museum-intro h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.museum-intro p {
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+.museum-timeline {
+  padding: var(--spacing-xxl) 0;
+  background-color: var(--bg-secondary);
+}
+
+.museum-timeline h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.timeline-card {
+  background-color: var(--bg-primary);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.timeline-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.timeline-image {
+  position: relative;
+  aspect-ratio: 3/2;
+  overflow: hidden;
+}
+
+.timeline-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.timeline-card:hover .timeline-image img {
+  transform: scale(1.05);
+}
+
+.timeline-year {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--porsche-red);
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+}
+
+.timeline-content {
+  padding: 1.25rem;
+}
+
+.timeline-content h3 {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.timeline-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.timeline-link:hover {
+  color: var(--porsche-red);
+}
+
+.museum-cta {
+  padding: var(--spacing-xxl) 0;
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.museum-cta .cta-content {
+  text-align: center;
+}
+
+.museum-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.museum-cta p {
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .timeline-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .timeline-grid { grid-template-columns: 1fr; }
+}

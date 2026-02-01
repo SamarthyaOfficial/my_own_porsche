@@ -1,0 +1,234 @@
+.race-calendar-page {
+  min-height: 100vh;
+}
+
+.calendar-hero {
+  padding: 160px 0 80px;
+  background: linear-gradient(135deg, var(--bg-dark) 0%, #1a1a2e 100%);
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.calendar-hero-content h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.calendar-hero-content p {
+  font-size: 1.125rem;
+  opacity: 0.8;
+}
+
+.calendar-filters {
+  padding: var(--spacing-lg) 0;
+  background-color: var(--bg-secondary);
+  position: sticky;
+  top: 80px;
+  z-index: 50;
+}
+
+.filter-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filter-wrapper label {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.filter-wrapper select {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: var(--radius-md);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  min-width: 280px;
+  cursor: pointer;
+}
+
+.filter-wrapper select:focus {
+  outline: none;
+  border-color: var(--text-primary);
+}
+
+.calendar-content {
+  padding: var(--spacing-xl) 0 var(--spacing-xxl);
+  background-color: var(--bg-primary);
+}
+
+.month-group {
+  margin-bottom: var(--spacing-xl);
+}
+
+.month-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--porsche-red);
+  display: inline-block;
+}
+
+.races-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.race-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.25rem;
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.race-card:hover {
+  transform: translateX(8px);
+  box-shadow: var(--shadow-md);
+}
+
+.race-card.featured {
+  background: linear-gradient(135deg, #1a1a2e 0%, var(--bg-dark) 100%);
+  color: var(--text-dark);
+}
+
+.race-date {
+  width: 60px;
+  height: 60px;
+  background-color: var(--porsche-red);
+  color: white;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.date-day {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.date-month {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.race-info {
+  flex: 1;
+}
+
+.race-series {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--porsche-red);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.race-card.featured .race-series {
+  color: #ff6b6b;
+}
+
+.race-event {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.race-location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.race-card.featured .race-location {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.race-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.race-dates {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.featured-badge {
+  padding: 0.25rem 0.75rem;
+  background-color: var(--porsche-red);
+  color: white;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: var(--radius-full);
+}
+
+.no-races {
+  text-align: center;
+  padding: var(--spacing-xxl) 0;
+  color: var(--text-muted);
+}
+
+.calendar-cta {
+  padding: var(--spacing-xxl) 0;
+  background-color: var(--bg-secondary);
+}
+
+.calendar-cta .cta-content {
+  text-align: center;
+}
+
+.calendar-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.calendar-cta p {
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .filter-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-wrapper select {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .race-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .race-meta {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
