@@ -7,9 +7,10 @@ A full-stack web application that replicates the sleek design and functionality 
 
 ## 📸 Screenshots
 <img width="1910" height="897" alt="image" src="https://github.com/user-attachments/assets/1e6f1f3f-a6cc-4731-93bb-041e6c8d1672" />
+<img width="1918" height="971" alt="image" src="https://github.com/user-attachments/assets/0203a53b-69dc-492d-8dc9-b92cc510c66b" />
 <img width="1917" height="971" alt="image" src="https://github.com/user-attachments/assets/99088a0b-169c-4cf1-92bf-c097ed313233" />
 <img width="1917" height="963" alt="image" src="https://github.com/user-attachments/assets/b5a5a2ed-0089-48c6-b4b1-81b7f65e9dc5" />
-<img width="1918" height="971" alt="image" src="https://github.com/user-attachments/assets/0203a53b-69dc-492d-8dc9-b92cc510c66b" />
+
 
 
 ## ✨ Features
