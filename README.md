@@ -14,18 +14,18 @@ A full-stack web application that replicates the sleek design and functionality 
 
 
 ## ✨ Features
-* **Feature 1:** E.g., Responsive 3D car configurator.
-* **Feature 2:** E.g., Secure user authentication.
-* **Feature 3:** E.g., Dynamic vehicle inventory fetching.
+* **Feature 1:** Nearest Store Finder.
+* **Feature 2:** Secure user authentication.
+* **Feature 3:** Dynamic vehicle inventory fetching.
 
 ## 🛠️ Tech Stack
 **Frontend:**
-* Framework 1 (e.g., React / Next.js)
-* Styling (e.g., Tailwind CSS / Sass)
+* React
+* Styling: Tailwind CSS
 
 **Backend:**
-* Runtime/Framework (e.g., Node.js / Express)
-* Database (e.g., PostgreSQL - *Hosted on Render*)
+* Framework: Spring Boot
+* Database: PostgreSQL - *Hosted on Render*
 
 ## 🚀 Getting Started Locally
 
