@@ -1,4 +1,4 @@
-# 🏎️ My Own Porsche (Porsche Clone)
+# 🏎️ My Own Porsche (Porsche Digital Storefront)
 
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?logo=vercel&logoColor=white)](https://project-porsche.vercel.app)
 A full-stack web application that replicates the sleek design and functionality of the official Porsche website. 
