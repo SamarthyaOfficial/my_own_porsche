@@ -54,4 +54,4 @@ npm start
 ## 👨‍💻 Author
 **Samarthya**
 * GitHub: [@SamarthyaOfficial](https://github.com/SamarthyaOfficial)
-* LinkedIn: LinkedIn: [[Your LinkedIn Profile URL](https://www.linkedin.com/in/samarthya-d-gupta-45b47628b/)]
+* LinkedIn: [Samarthya Dev Gupta](https://www.linkedin.com/in/samarthya-d-gupta-45b47628b/)
